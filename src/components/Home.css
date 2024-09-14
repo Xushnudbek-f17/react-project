@@ -1,0 +1,674 @@
+.Home{
+    margin-top: 65px;
+}
+
+.passages{ 
+    display: flex;
+    align-items: start;
+    gap: 2px;
+    width: 85%;
+    margin: 0 auto;
+    transition-delay: 1s;
+}
+nav{
+    position: fixed;
+    background-color: rgb(224, 224, 224);
+    opacity: 0.965;
+    z-index: 2;
+}
+
+.passage1{
+    width: 49%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    gap: 12px;
+}
+.passage1 h2{
+    font-weight: 400;
+    font-size: 4rem;
+}
+.pas1_btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pas1_btn{
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 157, 0);
+    color: aliceblue;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+.pas1_btn:hover{
+    background-color: rgb(185, 115, 4);
+}
+.pas1_btn2{
+    padding: 16px 23px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    transition-duration: 0.5s;
+}
+.pas1_btn2:hover{
+    background-color: rgb(192, 189, 189);
+}
+.vertical-line{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+.pas1par1{
+    width: 100%;
+}
+.pas1par1 h3{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.pas1par1 p{
+    font-size: 24px;
+}
+.pas1par1 li{
+    font-size: 20px;
+}
+.passage2{
+    width: 49%;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos{
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: aliceblue;
+    white-space: nowrap;
+}
+.logos:hover .logo-slider{
+    animation-play-state: paused;
+}
+.logo-slider{
+    display: inline-block;
+    white-space: nowrap;
+    animation: 15s slide infinite linear;
+    direction: right;
+}
+.logo-slider img{
+    height: 50px;
+    margin: 0 40px;
+}
+
+
+@keyframes edils {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.branding{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: rgb(255, 238, 238);
+    white-space: nowrap;
+}
+.branding:hover .brander{
+    animation-play-state: paused;
+}
+.brander{
+    display: inline-block;
+    white-space: nowrap;
+    animation: 15s edils infinite linear;
+}
+.brander img{
+    height: 70px;
+    margin: 0 30px;
+}
+.brander img:nth-child(1){
+    height: 90px;
+    margin: 0 30px;
+}
+
+.parts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.part1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.part1 h4{
+    font-size: 3rem;
+    color: black;
+    font-weight: 500;
+}
+.part1 small{
+    font-size: 1.65rem;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 99%;
+    margin: 50px;
+    overflow: hidden;
+}
+.flag1{
+    border-radius: 12px;
+    height: 750px;
+    width: 49.75%;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url("../offlineimg/IMAGE.png");
+}
+.flag1 h5{
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+.flag1 p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+}
+.flag-container{
+    width: 85%;
+    margin: 0 auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.flag1 .flag-container button{
+    width: 200px;
+    margin: 20px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 11px;
+    transition-duration: 0.5s;
+}
+.flag1 .flag-container button:hover{
+    background-color: rgb(50, 50, 50);
+}
+.flag1 .flag-container img{
+    width: 90%;
+}
+.flag2{
+    border-radius: 12px;
+    height: 750px;
+    width: 49.75%;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url("../offlineimg/IMAGE\ \(1\).png");
+}
+.flag2 h5{
+    font-size: 3rem;
+    color: black;
+    font-weight: 400;
+}
+.flag2 p{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+}
+.flag-container{
+    width: 85%;
+    margin: 0 auto;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.flag2 .flag-container button{
+    width: 200px;
+    margin: 20px;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 11px;
+    transition-duration: 0.5s;
+}
+.flag2 .flag-container button:hover{
+    background-color:rgb(198, 180, 159);
+}
+.flag2 .flag-container img{
+    width: 140%;
+    opacity:1;
+}
+.budget-texts button{
+    margin-top: 15px;
+    border: 1px solid black;
+    background: none;
+    color: black;
+    padding: 13px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.budget-texts button:hover{
+    background-color: rgb(222, 222, 222);
+}
+.budget-texts {
+    width: 84%;
+    margin: 0 auto;
+}
+.budget-texts div{
+    width: 80%;
+}
+.budget-texts h5{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.budget-texts small{
+    font-size: 1.56rem;
+}
+.budget-select{
+    background-color: aliceblue;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.budget-central{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.budget-central h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.budget-central img{
+    width: 75px;
+    height: 75px;
+}
+.budget-central div:nth-child(1){
+    width: 200px;
+    height: 300px;
+    gap: 30px;
+}
+.budget-central button{
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 12px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    color: black;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.budget-central button img{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+.budget-central button:hover{
+    border: 3px solid orange;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.already{
+    width: 86%;
+    margin: 0 auto;
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.already1{
+    width: 48%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 10px;
+}
+.already1 h1{
+    font-size: 3rem;
+}
+.already1 button img{
+    height: 20px;
+}
+.already1 button{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    width: 130px;
+    color: orange;
+    transition: all 0.7s;
+    justify-content: space-between;
+    height: 40px;
+    font-size: 1.2rem;
+}
+.already1 button:hover{
+    width: 140px;
+}
+.already2{
+    width: 50%;
+    height: 400px;
+}
+.already2 img{
+    height: 99%;
+    width: 99%;
+}
+.tvbrex{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 84%;
+    margin: 0 auto;
+}
+.tv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49.77%;
+}
+.tv1-container{
+    width: 80%;
+}
+.tv1-container h6{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.tv1-container p{
+    font-size: 1.65rem;
+    margin-top: 40px;
+}
+.tv-btns{
+    margin-top: 40px;
+    width: 500px;
+    display: flex;
+    gap: 10px;
+}
+.tv2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 49.6%;
+}
+.tv2 img{
+    width: 100%;
+}
+@media screen and (max-width:1210px) {
+    .already1 h1{
+        font-size: 2.3rem;
+    }
+    .already1 p{
+        font-size: 0.9rem;
+    }
+    .already{
+        width: 94%;
+    }
+    .already2 img{
+        width: 100%;
+        height: 390px;
+    }
+    .passage1 h2{
+        font-size: 3rem;
+    }
+    .pas1_btn{
+        padding: 16px 20px;
+        font-size: 15px;
+    }
+    .pas1_btn2{
+        padding: 15px 19px;
+        font-size: 15px;
+    }
+    .pas1_btns{
+        gap: 14px;
+    }
+    .pas1par1 h3{
+        font-size: 1.4rem;
+    }
+    .pas1par1 p{
+        font-size: 14px;
+    }
+    .pas1par1{
+        font-size: 12px;
+    }
+    .passage2 img{
+        height: 500px;
+    }
+    .tv1-container h6{
+        font-size: 2.4rem;
+    }
+    .tv1-container p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:974px) {
+    .already{
+        flex-direction: column;
+    }
+    .already1{
+        width: 94%;
+    }
+    .already2 img{
+        width: 100%;
+        height:90%;
+    }
+    .already2{
+        width:450px;
+        height: 550px;
+    }
+}
+@media screen and (max-width:866px) {
+    .passage1 h2{
+        font-size: 2rem;
+    }
+    .pas1_btns{
+        gap: 8px;
+    }
+    .pas1_btn{
+        padding: 12px 13px;
+        font-size: 14px;
+    }
+    .pas1_btn2{
+        padding: 11px 12px;
+        font-size: 14px;
+    }
+    .pas1par1 h3{
+        font-size: 1.22rem;
+    }
+    .passage2 img{
+        height: 450px;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .flag1{
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .flag2{
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .flag-container{
+        width: 95%;
+    }
+    .tv1-container h6{
+        font-size: 1.9rem;
+    }
+    .tv1-container p{
+        font-size: 0.9rem;
+    }
+    .tv-btns button{
+        padding: 8px 6px;
+    }
+}
+@media screen and (max-width:700px) {
+    .passages{
+        display: flex;
+        flex-direction: column;
+    }
+    .passage1{
+        width: 100%;
+    }
+    .passage2{
+        width: 100%;
+    }
+    .logos{
+        margin-top: 20px;
+        padding: 30px 0;
+    }
+    .logo-slider img{
+        height: 35px;
+        margin: 0 20px;
+    }
+    .branding{
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+    .brander img{
+        height: 20px;
+        margin: 0 20px;
+    }
+    .flag1, .flag2{
+        width: 95%;
+    }
+    .flag-container {
+        flex-direction: column;
+    }
+    .flag1 p, .flag2 p{
+        font-size: 1rem;
+    }
+    .flag1 h5, .flag2 h5{
+        font-size: 2.4rem;
+    }
+    .budget-texts{
+        width: 90%;
+    }
+    .budget-texts button{
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .budget-texts h5{
+        font-size: 2rem;
+    }
+    .budget-texts small{
+        font-size: 1.1rem;
+    }
+    .budget-central h3{
+        font-size: 2rem;
+    }
+    .tv-btns button{
+        font-size: 0.65rem;
+    }
+    .tv1-container h6{
+        font-size: 1.4rem;
+    }
+    .tv1-container p{
+        font-size: 0.65rem;
+    }
+    .tv-btns{
+        margin-top: 15px;
+    }
+    .tvbrex{
+        width: 100%;
+    }
+    .budget-central button{
+        width: 190px;
+    }
+
+
+
+
+}
+@media screen and (max-width:550px) {
+    .flag1 h5, .flag2 h5{
+        font-size: 2rem;
+    }
+    .flag2 p, .flag1 p{
+        font-size: 0.9rem;
+    }
+    .budget-texts button{
+        padding: 7px;
+    }
+    .budget-texts small{
+        font-size: 1rem;
+    }
+    .budget-central h3{
+        font-size: 1.65rem;
+    }
+    .passage2 img{
+        height: 400px;
+    }
+    .tv-btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .tv-btns button{
+        width: 140px;
+    }
+    .tv1-container h6{
+        font-size: 1.2rem;
+    }
+    .already{
+        gap: 20px;
+        height: 450px;
+    }
+    .already2{
+        width: 90%;
+    }
+    .already1 h1{
+        font-size: 2rem;
+    }
+    .already1 p{
+        font-size: 0.8rem;
+    }
+    .passage2{
+        margin-top: 20px;
+        height: 300px;
+    }
+    .passage2 img{
+        height: 280px;
+    }
+}

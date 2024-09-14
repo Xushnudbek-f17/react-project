@@ -1,0 +1,355 @@
+.Todo{
+    margin-top: 70px;
+    width: 100%;
+}
+.intro-product{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-product h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.brand-column{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100;
+    flex-direction: column;
+}
+.nike-apple{
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    height: 300px;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.nike-apple h2{
+    font-size: 3rem;
+    margin-left: 25px;
+}
+.nike-apple p{
+    font-size: 1.5rem;
+    margin-left: 25px;
+}
+.na-imgs{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.daily-apps{
+    width: 93%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(38, 38, 38);
+    border-radius: 20px;
+    gap: 10%;
+}
+.da-imgs{
+    width: 50%;
+    height: 85%;
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.da-imgs img{
+    width: 120px;
+    height: 110px;
+    border-radius: 20px;
+}
+.da-texts{
+    flex-direction: column;
+    margin-left: 2%;
+}
+.da-texts h2{
+    font-size: 3.1rem;
+    color: aliceblue;
+}
+.da-texts p{
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: rgb(252, 152, 30);
+    border-radius: 23px;
+}
+.sm-texts{
+    margin-left: 10px;
+    flex-direction: column;
+    width: 50%;
+}
+.sm-texts h2{
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+.sm-texts p{
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+.sm-img{
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+    height: 280px;
+    margin-top: 10px;
+    background-image: url(../asm.png);
+}
+.cards{
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.cardType{
+    width: 300px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    border: 2px solid green;
+}
+.qwerty{
+    display: none;
+}
+.price-master{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+.price-master select{
+    width: 200px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.price-master option{
+    font-size: 1rem;
+}
+
+.cardType img{
+    width: 80%;
+    height: 160px;
+}
+.cardType h4{
+    margin-top: 12px;
+    font-size: 22px;
+}
+.cardType p{
+    font-size: 1.1rem;
+}
+.cardType button{
+    padding: 4px 16px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: orange;
+    transition-duration: 0.3s;
+}
+.cardType button:hover{
+    background-color: rgb(214, 140, 4);
+}
+.cardType button:focus{
+    border: 1px solid black;
+}
+.cart-master{
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-items{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    height: 99%;
+    justify-content: center;
+    gap: 20px;
+
+}
+.cart-items div{
+    height: 180px;
+    gap: 30px;
+}
+.cart-items button{
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 8.4px;
+    border: none;
+    color: aliceblue;
+    background-color: orange;
+    height: 35px;
+    transition: all 0.4s;
+    padding: 2px;
+}
+.search-inp{
+    width: 400px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid green;
+    padding: 6px;
+}
+
+@media screen and (max-width:1376px) {
+    .da-imgs img{
+        width: 80px;
+        height: 75px;
+        border-radius: 10px;
+    }
+    .sm-texts h2{
+        font-size: 2.1rem;
+    }
+    .sm-texts p{
+        font-size: 1.123rem;
+    }
+}
+@media screen and (max-width:933px) {
+    .daily-apps{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 450px;
+    }
+    .da-texts{
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    .da-texts h2{
+        font-size: 2.33rem;
+    }
+    .da-texts p{
+        font-size: 1.2rem;
+    }
+    .da-imgs{
+        height: 50%;
+    }
+    .nike-apple{
+        flex-direction: column-reverse;
+        height: 450px;
+    }
+    .nike-apple h2, .nike-apple p{
+        margin-top: 5%;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        align-items: unset;
+        height: 450px;
+    }
+    .sm-img{
+        width: 80%;
+        margin-left: 10%;
+        height: 250px;        
+    }
+    .sm-texts{
+        width: 80%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+}
+@media screen and (max-width:680px) {
+    .nike-apple, .daily-apps, .social-media{
+        width: 100%;
+    }
+    .da-texts h2,  .sm-texts h2{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .nike-apple h2{
+        font-size: 2.2rem;
+    }
+    .nike-apple p{
+        font-size: 1.05rem;
+    }
+    .da-texts p,  .sm-texts p{
+        font-size: 0.95rem;
+        margin: 0;
+    }
+    .da-imgs{
+        width: 90%;
+    }
+    .cards{
+        width: 100%;
+    }
+    .cardType{
+        width: 80%;
+        height: 510px;
+    }
+    .cardType img{
+        width: 84%;
+    }
+    .cardType h4{
+        font-size: 2.2rem;
+    }
+    .cardType small{
+        font-size: 0.8rem;
+        margin:0 20px;
+    }
+    .cardType p{
+        font-size: 1.34rem;
+    }
+    .cardType button{
+        width: 140px;
+        height: 34px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+    .search-inp{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cardType{
+        height: 450px;
+    }
+    .cart button{
+        width: 120px;
+        font-size: 1.1rem;
+        margin-left: 25%;
+    }
+    .intro-product h1{
+        font-size: 2rem;
+    }
+    .da-imgs{
+        height: 40%;
+    }
+}
+.cart button{
+    margin-bottom: 50px;
+}
