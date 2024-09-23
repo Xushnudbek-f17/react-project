@@ -1,0 +1,190 @@
+.Clients{
+    margin-top: 85px;
+}
+.client-intro{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.client-intro h1{
+    font-size: 3rem;
+}
+.client-intro p{
+    font-size: 1.56rem;
+}
+.sponsors{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.doordash{
+    border-radius: 50px;
+    margin-top: 40px;
+    width: 100%;
+    border: 1px solid orange;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-image: url("../offlineimg/door-scooter.jpg");
+    height: 560px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.doordash img{
+    width: 24%;
+    position: absolute;
+}
+.celtics{
+    width: 48%;
+    border: 1px solid orange;
+    height: 550px;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../offlineimg/cup-celtics.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.celtics img{
+    width: 40%;
+}
+.lemonade{
+    border: 1px solid orange;
+    border-radius: 50px;
+    width: 49%;
+    background-size: cover;
+    background-image: url("../offlineimg/lemonade\ phone.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.lemonade img{
+    width: 47%;
+    opacity: 0.83;
+}
+
+.sponsor{
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: rgb(45, 45, 45);
+    white-space: nowrap;
+}
+.sponsor:hover .sponsor-slider{
+    animation-play-state: paused;
+}
+.sponsor-slider{
+    display: inline-block;
+    white-space: nowrap;
+    animation: 30s slide infinite linear;
+    direction: right;
+}
+.sponsor-slider img{
+    border: 3px solid orange;
+    background-color: white;
+    border-radius: 12px;
+    padding: 4px 10px;
+    height: 70px;
+    margin: 0 40px;
+    min-width: 140px;
+}
+.stories{
+    width: 87%;
+    margin: 0 auto;
+}
+.partners-default, .partners-default2,  .partners-default3{
+    width: 99%;
+    border-radius: 12px;
+    height: 570px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    transition: all 1s;
+}
+.partner-texts{
+    width: 48.5%;
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 4%;
+    gap: 50px;
+}
+.partner-logo{
+    width: 45%;
+    height: 75px;
+    border-radius: 12px;
+    padding: 5px;
+}
+.partner-btns{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.partner-btns button{
+    width: 70px;
+    background-color: black;
+    border: 1px solid white;
+    height: 50px;
+}
+.partner-btns img{
+    width: 70px;
+    height: 40px;
+}
+.partners-default .partner-btns button:nth-child(1) img{
+    rotate: 180deg;
+}
+.partners-default2 .partner-btns button:nth-child(2) img{
+    rotate: 180deg;
+}
+.partner-texts h3{
+    font-size: 2.3rem;
+}
+.partner-texts p{
+    font-size: 1.3rem;
+}
+.partner-img2{
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+}
+.partner-img2 img{
+    width: 99%;
+}
+
+.partners-default .partner-img{
+    width: 50%;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 20px;
+    background-image: url("https://brand.brex.com/transform/5906777e-a441-40d3-8696-611893a2d1b8/customer-stories_-small_Alexandr-Wang-Headshot-e1715639390279-2-1-1?io=transform:fit,width:1850,height:1376&quality=95");
+}.partners-default3 .partner-img{
+    width: 50%;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    border-radius: 20px;
+    background-image: url("https://brand.brex.com/transform/d2cd6b91-bee5-4491-9ad1-e91661702c50/Seat-geek-Teddy-Collins-1-1?io=transform:fit,width:1850,height:1376&quality=95");
+}

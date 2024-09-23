@@ -34,10 +34,14 @@ function Products() {
         return item.post.title.toLowerCase().includes(value.toLowerCase())
     })
     
+    const [bla, setbla] = useState("latin")
+    
+    const [confirm, confirm2] = useState("latin")
+
 
   return (
     <div className='Todo'>
-        <div className="general  animate__animated  animate__fadeInRight">
+        <div className="general animate__animated   animate__fadeIn">
                     <div className='intro-product'>
             <h1>Virtual Cards for all your needs</h1>
             <div className='brand-column'>
@@ -86,16 +90,17 @@ function Products() {
                 
 
                 return(
-            <div key={index} className="cardType" onClick={() => cozinaCard(item)}>
+            <div  onMouseMove={()=>{setbla("")}} onMouseLeave={()=> {setbla("latin")}} key={index} className="cardType" onClick={() => cozinaCard(item)}>
                 <h4 key={item.post.title}>{item.post.title}</h4>
                 <img key={item.post.img} src={item.post.img}/>
                 <p key={item.post.price}>{item.post.price}$</p>
-                {/* <small>{item.post.desc}</small> */}
-                <button>Buy</button>
+                <small>{item.post.desc}</small>
+                <button onClick={()=> {confirm2("repeate-modal")}}>Buy</button>
             </div>
                 )
            })
         }</div>
+         
          
     </div>
   )

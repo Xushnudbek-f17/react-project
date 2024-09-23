@@ -1,85 +1,86 @@
 .Home{
-    margin-top: 65px;
+    margin-top: 74px;
 }
-
+body{
+    background-color: black;
+}
 .passages{ 
     display: flex;
     align-items: start;
     gap: 2px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     transition-delay: 1s;
+    height: 730px;
+}
+.passage-texts{
+    opacity: 19;
+    padding: 10px;
+    position: relative;
+    top: 25%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.passage-texts h1{
+    color: white;
+    z-index: 1;
+    font-size: 4rem;
+    text-shadow: 1px 0px 10px white;
+}
+.passage-texts p{
+    font-size: 1.56rem;
+    color: aliceblue;
+    text-shadow: 4px 1px 10px white;
+}
+.passage-texts div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.passage-texts button{
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    color: orange;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 1.23rem;
+    transition: all 0.34s;
+    text-shadow: 1px 0px 10px white;
+
+}
+
+.passage-texts button:hover{
+    background-color: rgb(21, 21, 21);
+}
+.letimg{
+    height: 700px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
 }
 nav{
     position: fixed;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(235, 192, 112);
     opacity: 0.965;
     z-index: 2;
 }
 
-.passage1{
-    width: 49%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: start;
-    gap: 12px;
-}
-.passage1 h2{
-    font-weight: 400;
-    font-size: 4rem;
-}
-.pas1_btns{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.pas1_btn{
-    padding: 17px 24px;
-    border-radius: 8px;
-    border: none;
-    background-color: rgb(255, 157, 0);
-    color: aliceblue;
-    font-size: 22px;
-    transition-duration: 0.5s;
-}
-.pas1_btn:hover{
-    background-color: rgb(185, 115, 4);
-}
-.pas1_btn2{
-    padding: 16px 23px;
-    border-radius: 8px;
-    border: 1px solid gray;
-    background-color: white;
-    color: black;
-    font-size: 22px;
-    transition-duration: 0.5s;
-}
-.pas1_btn2:hover{
-    background-color: rgb(192, 189, 189);
-}
+
 .vertical-line{
     width: 100%;
     height: 1px;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
-.pas1par1{
-    width: 100%;
-}
-.pas1par1 h3{
-    color: black;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.pas1par1 p{
-    font-size: 24px;
-}
-.pas1par1 li{
-    font-size: 20px;
-}
-.passage2{
-    width: 49%;
-}
+
 
 @keyframes slide {
     from{
@@ -92,8 +93,8 @@ nav{
 .logos{
     margin-top: 20px;
     overflow: hidden;
-    padding: 60px 0;
-    background-color: aliceblue;
+    padding: 30px 0;
+    background-color: rgb(45, 45, 45);
     white-space: nowrap;
 }
 .logos:hover .logo-slider{
@@ -102,29 +103,33 @@ nav{
 .logo-slider{
     display: inline-block;
     white-space: nowrap;
-    animation: 15s slide infinite linear;
+    animation: 12s slide infinite linear;
     direction: right;
 }
 .logo-slider img{
-    height: 50px;
+    border: 5px solid orange;
+    background-color: white;
+    border-radius: 12px;
+    padding: 4px 10px;
+    height: 70px;
     margin: 0 40px;
+    min-width: 140px;
 }
 
 
 @keyframes edils {
     from{
-        transform: translateX(0);
+        transform: translateX(-100%);
     }
     to{
-        transform: translateX(-100%);
+        transform: translateX(0%);
     }
 }
 .branding{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
     overflow: hidden;
-    padding: 40px 0;
-    background-color: rgb(255, 238, 238);
+    padding: 30px 0;
+    background-color: rgb(45, 45, 45);
     white-space: nowrap;
 }
 .branding:hover .brander{
@@ -133,15 +138,15 @@ nav{
 .brander{
     display: inline-block;
     white-space: nowrap;
-    animation: 15s edils infinite linear;
+    animation: 12s edils infinite linear;
 }
 .brander img{
-    height: 70px;
-    margin: 0 30px;
-}
-.brander img:nth-child(1){
+    background-color: white;
+    border: 5px solid orange;
+    border-radius: 12px;
+    padding: 4px 10px;
     height: 90px;
-    margin: 0 30px;
+    margin: 0 40px;
 }
 
 .parts{
@@ -161,9 +166,13 @@ nav{
     font-size: 3rem;
     color: black;
     font-weight: 500;
+    text-shadow: 1px 0px 10px white;
+
 }
 .part1 small{
     font-size: 1.65rem;
+    text-shadow: 1px 0px 10px white;
+
 }
 .part2{
     display: flex;
@@ -186,11 +195,15 @@ nav{
     font-size: 3rem;
     color: white;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag1 p{
     font-size: 1.2rem;
     color: white;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag-container{
     width: 85%;
@@ -207,11 +220,13 @@ nav{
     margin: 20px;
     border: 1px solid white;
     background: none;
-    color: white;
+    color: orange;
     padding: 15px;
     font-size: 1.1rem;
     border-radius: 11px;
     transition-duration: 0.5s;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag1 .flag-container button:hover{
     background-color: rgb(50, 50, 50);
@@ -226,17 +241,21 @@ nav{
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
-    background-image: url("../offlineimg/IMAGE\ \(1\).png");
+    background-image: url("../offlineimg/IMAGE.png");
 }
 .flag2 h5{
     font-size: 3rem;
     color: black;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag2 p{
     font-size: 1.2rem;
     color: black;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag-container{
     width: 85%;
@@ -251,16 +270,18 @@ nav{
 .flag2 .flag-container button{
     width: 200px;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid white;
     background: none;
-    color: black;
+    color: orange;
     padding: 15px;
     font-size: 1.1rem;
     border-radius: 11px;
     transition-duration: 0.5s;
+    text-shadow: 1px 0px 10px white;
+
 }
 .flag2 .flag-container button:hover{
-    background-color:rgb(198, 180, 159);
+    background-color:rgb(49, 49, 49);
 }
 .flag2 .flag-container img{
     width: 140%;
@@ -270,18 +291,24 @@ nav{
     margin-top: 15px;
     border: 1px solid black;
     background: none;
-    color: black;
+    color: white;
     padding: 13px;
     font-size: 1.1rem;
     border-radius: 10px;
     transition-duration: 0.5s;
+    border: 1px solid orange;
+    background-color: rgb(22, 22, 22);
+    text-shadow: 1px 0px 10px white;
+
 }
 .budget-texts button:hover{
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(51, 51, 51);
 }
 .budget-texts {
     width: 84%;
     margin: 0 auto;
+    text-shadow: 1px 0px 10px white;
+
 }
 .budget-texts div{
     width: 80%;
@@ -289,17 +316,24 @@ nav{
 .budget-texts h5{
     font-size: 3rem;
     font-weight: 400;
+    color: orange;
+    text-shadow: 1px 0px 10px white;
+
 }
 .budget-texts small{
     font-size: 1.56rem;
+    color: orange;
+    text-shadow: 1px 0px 10px white;
+
 }
 .budget-select{
-    background-color: aliceblue;
+    background-color: rgb(15, 15, 15);
     width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
 }
 .budget-central{
     width: 60%;
@@ -311,6 +345,9 @@ nav{
 .budget-central h3{
     font-size: 3rem;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+
+    color: aliceblue;
 }
 .budget-central img{
     width: 75px;
@@ -323,17 +360,19 @@ nav{
 }
 .budget-central button{
     margin-top: 10px;
-    width: 300px;
+    width: 400px;
     border-radius: 12px;
     height: 50px;
-    background-color: white;
+    background-color: rgb(43, 43, 43);
     border: 1px solid gray;
-    color: black;
-    font-size: 1rem;
-    transition-duration: 0.3s;
+    color: orange;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
+    transition: all 0.34s;
     gap: 10px;
+    text-shadow: 1px 0px 10px white;
+
 }
 .budget-central button img{
     height: 40px;
@@ -341,10 +380,7 @@ nav{
     margin-left: 10px;
 }
 .budget-central button:hover{
-    border: 3px solid orange;
-    width: 300px;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(75, 75, 75);
 }
 .already{
     width: 86%;
@@ -365,6 +401,14 @@ nav{
 }
 .already1 h1{
     font-size: 3rem;
+    color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
+}
+.already1 p{
+    color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
 }
 .already1 button img{
     height: 20px;
@@ -372,20 +416,21 @@ nav{
 .already1 button{
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: black;
     border: none;
     width: 130px;
     color: orange;
-    transition: all 0.7s;
+    transition: all 0.4s;
     justify-content: space-between;
-    height: 40px;
     font-size: 1.2rem;
+    text-shadow: 1px 0px 10px white;
+
 }
 .already1 button:hover{
     width: 140px;
 }
 .already2{
-    width: 50%;
+    width: 47%;
     height: 400px;
 }
 .already2 img{
@@ -393,12 +438,13 @@ nav{
     width: 99%;
 }
 .tvbrex{
-    background-color: aliceblue;
+    background-color: rgb(26, 26, 26);
     display: flex;
     align-items: center;
     gap: 10px;
     width: 84%;
     margin: 0 auto;
+    border-radius: 30px;
 }
 .tv1{
     display: flex;
@@ -412,10 +458,29 @@ nav{
 .tv1-container h6{
     font-size: 3rem;
     font-weight: 400;
+    text-shadow: 1px 0px 10px white;
+    color: aliceblue;
 }
 .tv1-container p{
     font-size: 1.65rem;
     margin-top: 40px;
+    color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+}
+.tv1-container button{
+    width: 300px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 8px;
+    color: orange;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 1.23rem;
+    transition: all 0.34s;
+    text-shadow: 1px 0px 10px white;
+}
+.tv1-container button:hover{
+    background-color: rgb(32, 32, 32);
 }
 .tv-btns{
     margin-top: 40px;

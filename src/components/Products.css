@@ -12,7 +12,9 @@
 .intro-product h1{
     font-size: 3.2rem;
     font-weight: 600;
+    color: white;
     margin-bottom: 30px;
+    text-shadow: 1px 0px 10px white;
 }
 .brand-column{
     display: flex;
@@ -28,17 +30,23 @@
     height: 300px;
     flex-direction: row-reverse;
     align-items: center;
-    background-color: aliceblue;
+    background-color: purple;
     justify-content: space-between;
     border-radius: 20px;
 }
 .nike-apple h2{
     font-size: 3rem;
     margin-left: 25px;
+    color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
 }
 .nike-apple p{
     font-size: 1.5rem;
     margin-left: 25px;
+    color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+    
 }
 .na-imgs{
     display: flex;
@@ -78,10 +86,14 @@
 .da-texts h2{
     font-size: 3.1rem;
     color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
 }
 .da-texts p{
     font-size: 1.5rem;
     color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
 }
 .social-media{
     display: flex;
@@ -97,10 +109,14 @@
     margin-left: 10px;
     flex-direction: column;
     width: 50%;
+    text-shadow: 1px 0px 10px white;
+
 }
 .sm-texts h2{
     font-size: 2.5rem;
     color: aliceblue;
+    text-shadow: 1px 0px 10px white;
+
 }
 .sm-texts p{
     font-size: 1.2rem;
@@ -113,7 +129,7 @@
     width: 48%;
     height: 280px;
     margin-top: 10px;
-    background-image: url(../asm.png);
+    background-image: url(../offlineimg/asm.png);
 }
 .cards{
     width: 88%;
@@ -131,14 +147,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    background-color: aliceblue;
+    gap: 10px;
+    background-color: rgb(169, 138, 80);
     border-radius: 12px;
-    border: 2px solid green;
+    border: 4px solid white;
 }
-.qwerty{
-    display: none;
-}
+
 .price-master{
     width: 90%;
     margin: 0 auto;
@@ -149,15 +163,9 @@
     padding-bottom: 50px;
     gap: 20px;
 }
-.price-master select{
-    width: 200px;
-    height: 40px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.price-master option{
-    font-size: 1rem;
+.price-master h1{
+    color: orange;
+    font-size: 3rem;
 }
 
 .cardType img{
@@ -170,6 +178,10 @@
 }
 .cardType p{
     font-size: 1.1rem;
+}
+.cardType small{
+    width: 90%;
+    margin: 0 auto;
 }
 .cardType button{
     padding: 4px 16px;
@@ -307,8 +319,8 @@
         width: 100%;
     }
     .cardType{
-        width: 80%;
-        height: 510px;
+        width:300px;
+        height: 410px;
     }
     .cardType img{
         width: 84%;

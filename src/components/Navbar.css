@@ -21,7 +21,7 @@ nav{
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 27%;
+    width: 35%;
     justify-content: space-between;
 }
 .paragraph1 img{
@@ -79,18 +79,6 @@ button{
 .paragraph2 button:nth-child(1):hover{
     background-color: rgb(221, 221, 221);
 }
-/* .sign-in-panel{
-    width: 100%;
-    height: 300px;
-    z-index: 3;
-    display: none;
-}
-.sign-up-panel{
-    width: 100%;
-    height: 500px;
-    z-index: 3;
-    display: none;
-} */
 
 .box{
     position: absolute;
@@ -98,10 +86,11 @@ button{
     right: 37%;
     bottom: 17%;
     width: 400px;
-    height: 450px;
-    background-color: rgb(227, 227, 227);
+    height: 490px;
+    background-color: rgb(27, 27, 27);
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 20px;
+    border: 2px solid orange;
 }
 .box img{
     height: 40px;
@@ -112,13 +101,14 @@ button{
     position: absolute;
     position: fixed;
     right: 37%;
-    bottom: 6.4%;
+    bottom: 4%;
     width: 400px;
-    height: 580px;
-    background-color: rgb(227, 227, 227);
+    height: 600px;
+    background-color: rgb(28, 28, 28);
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 20px;
     z-index: 3;
+    border: 2px solid orange;
 }
 .box2 img{
     height: 40px;
@@ -129,42 +119,51 @@ button{
     margin-top: 3%;
     margin-left: 11%;
     width: 80%;
-    height: 80%;
+    height: 83%;
 }
 .mini-box h6{
-    font-size: 1.56rem;
-    color: black;
+    font-size: 1.46rem;
+    color: orange;
 
 }
+.mini-box a{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
 .mini-box div{
     width: 100%;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 .mini-box p{
-    font-size: 1.2rem;
-    color: black;
+    font-size: 1.1rem;
+    color: orange;
     margin-bottom: 10px;
 }
 .mini-box input{
-    width: 98%;
+    width: 96%;
+    margin: 2px;
     padding: 4px 2px;
-    height: 36px;
+    height: 32px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid orange;
+    background-color: black;
+    color: orange;
 }
-.mini-box input:focus{
+.mini-box input:active{
     border: 1px solid orange;
 }
 .login-btn{
-    width: 100%;
-    height: 40px;
+    width: 98%;
+    height: 35px;
     font-size:1.45rem;
     color: rgb(0, 0, 0);
     background-color: rgb(255, 157, 0);    
     border: none;
     border-radius: 8px;
     transition-duration: 0.3s;
+    margin-bottom: 10px;
 }
 .login-btn:hover{
     background-color: rgb(198, 122, 1);
@@ -232,8 +231,51 @@ button{
     color: black;
 }
 .menu-break img{
-    margin-left: 200px;
+    margin-left: 300px;
     position: absolute;
+}
+.repeate-modal{
+    position: fixed;
+    margin-top: 65px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+}
+.cont-rep{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 210px;
+    background-color: black;
+    border-radius: 20px;
+}
+.cont-rep h1{
+    margin-top: 30px;
+}
+.cont-rep div{
+    justify-content: space-between;
+    margin-top: 30px;
+    display: flex;
+    width: 70%;
+    height: 100px;
+}
+.cont-rep button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+}
+.cont-rep button:nth-child(1){
+    background-color: rgb(82, 82, 255);
+}
+.cont-rep button:nth-child(2){
+    background-color: rgb(255, 71, 71);
 }
 @media screen and (max-width:1200px) {
     .paragraph1{
